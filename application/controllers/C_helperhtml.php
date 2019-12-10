@@ -14,5 +14,10 @@ class C_helperhtml extends CI_Controller {
             "metacontent"=>array('name'=>'Content-type','content'=>'text/html; charset=utf-8','type'=>'equiv'),
         );
         $this->load->view("v_c_view_pureci",$data);
-	}
+    }
+    
+    function img(){
+        $data["judulapp"]="Menampilkan Gambar dengan img()";
+        $this->load->view("v_c_helperhtml_img",$data);
+    }
 }
